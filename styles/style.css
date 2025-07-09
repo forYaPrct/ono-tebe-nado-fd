@@ -1,1 +1,324 @@
-/* место для вашего кода */
+a {
+  text-decoration: none;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  align-items: flex-start;
+  max-width: 260px;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.address
+a {
+  border-bottom: 1px solid black;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(0 0 0 / 0.6);
+}
+
+/* Стили для Header */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 293px;
+  padding: 50px;
+  padding-bottom: 55px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 32px;
+  font-size: 18px;
+  list-style-type: circle;
+}
+
+.header__links-list-item_no-bullit {
+list-style-type: none;
+}
+
+.header__link {
+border-bottom: 1px solid black;
+}
+
+.header__link_active {
+border-bottom: none;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+.header__logo-image {
+  display: block;
+  width: auto;
+  height: 100%;
+  margin: auto;
+}
+
+.header__address {
+justify-self: end;
+max-width: 240px;
+}
+
+/* Стили для секции Cover */
+
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 757px;
+  padding: 165px 50px 50px 50px;
+  background-image: url(../images/cover.jpg);
+  background-position: bottom center;
+  background-size: auto 100%;
+}
+
+.cover__title {
+width: 100%;
+color: #fff;
+font-weight: bold;
+font-size: 100px;
+line-height: 115px;
+text-transform: uppercase;
+}
+
+.aligned-text {
+  position: relative;
+  display: block;
+  margin-right: -0.3em;
+  letter-spacing: 0.3em;
+}
+
+.aligned-text_center {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.description {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cover__description-text {
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 0.84em;
+}
+
+.bet-button {
+  width: 256px;
+  height: 51px;
+  border: #fff solid 1px;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: rgb(0 0 0 / 0);
+}
+
+/* Стили для секции Lots */
+
+.lots {
+  width: 1052px;
+  margin-top: 180px;
+  margin-right: auto;
+  margin-bottom: 120px;
+  margin-left: auto;
+}
+
+ .lots__heading {
+  margin-bottom: 27px;
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+ }
+
+.lots__card-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:left;
+  gap: 25px;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+  list-style: none;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 48px 40px;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_film {
+background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
+  z-index: 1;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: underline solid #fff;
+  text-transform: uppercase;
+}
+
+.card__text {
+  z-index: 1;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.lots__look-more-link {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 40px;
+  border-bottom: solid 1px #000;
+  font-size: 20px;
+}
+
+/* Стили для секции About */
+
+.about {
+  display: grid;
+  grid-template-columns: 334px auto;
+  gap: 25px;
+  width: 1052px;
+  min-height: 595px;
+  margin-right: auto;
+  margin-bottom: 180px;
+  margin-left: auto;
+  padding-top: 35px;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 240px;
+  height: 240px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 120px;
+  background-color: #000;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: auto;
+}
+
+.about__article {
+display: flex;
+flex-direction: column;
+}
+
+.about__title {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about__text {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about__text-start {
+  margin-right: 5px;
+}
+
+/* Стили для Footer */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  min-height: 180px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  list-style-type: none;
+}
+
+.footer__menu-list-item {
+    border-bottom: 1px solid #000;
+}
+
+.footer__menu-link_active {
+  border-bottom: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-self: end;
+  justify-content: space-between;
+  width: 240px;
+  list-style-type: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
